@@ -14,7 +14,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.user_repositories.ui.RepositoriesList
 import com.example.user_repositories.ui.RepositoriesViewModel
 import com.example.user_repositories.ui.theme.UserRepositoriesTheme
-
+import dagger.hilt.android.AndroidEntryPoint
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     private val repositoriesViewModel: RepositoriesViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,15 +37,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        text = "NADA PARA VER AQUI XXXX",
         modifier = modifier
     )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    UserRepositoriesTheme {
-        RepositoriesList()
-    }
 }
